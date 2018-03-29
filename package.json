@@ -1,16 +1,39 @@
 {
   "name": "showdown-markdown-loader",
-  "version": "0.0.0",
-  "description": "A WebPack loader for processing Mardown files with ShowdownJs.",
+  "version": "0.0.1",
+  "description": "A WebPack loader for processing Markdown files with ShowdownJs.",
+  "main": "index.js",
   "homepage": "https://github.com/brennanfee/showdown-markdown-loader",
   "author": {
     "name": "Brennan Fee",
     "email": "github@todaytechsoft.biz",
     "url": "https://github.com/brennanfee"
   },
-  "keywords": [],
-  "devDependencies": {},
-  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/brennanfee/showdown-markdown-loader/issues"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "markdown",
+    "html",
+    "showdown",
+    "showdownjs"
+  ],
+  "devDependencies": {
+    "highlight.js": "^9.12.0",
+    "html-loader": "^0.5.5",
+    "jest": "^22.4.3",
+    "prettier": "^1.11.1",
+    "webpack": "^4.4.1"
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0",
+    "showdown": "^1.8.6"
+  },
   "license": "MIT",
-  "repository": "brennanfee/showdown-markdown-loader"
+  "repository": "brennanfee/showdown-markdown-loader",
+  "scripts": {
+    "test": "jest --coverage"
+  }
 }

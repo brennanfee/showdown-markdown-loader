@@ -1,0 +1,24 @@
+{
+  "name": "showdown-markdown-loader-example",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --port 8888"
+  },
+  "author": {
+    "name": "Brennan Fee",
+    "email": "github@todaytechsoft.biz",
+    "url": "https://github.com/brennanfee"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "html-loader": "^0.5.5",
+    "showdown": "^1.8.6",
+    "showdown-markdown-loader": "0.0.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
