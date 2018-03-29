@@ -1,0 +1,16 @@
+{
+  "name": "showdown-markdown-loader",
+  "version": "0.0.0",
+  "description": "A WebPack loader for processing Mardown files with ShowdownJs.",
+  "homepage": "https://github.com/brennanfee/showdown-markdown-loader",
+  "author": {
+    "name": "Brennan Fee",
+    "email": "github@todaytechsoft.biz",
+    "url": "https://github.com/brennanfee"
+  },
+  "keywords": [],
+  "devDependencies": {},
+  "dependencies": {},
+  "license": "MIT",
+  "repository": "brennanfee/showdown-markdown-loader"
+}
