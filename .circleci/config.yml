@@ -31,12 +31,14 @@ jobs:
 
 workflows:
   version: 2
-  build_and_publish:
+  build_only:
     jobs:
       - build:
           filters:
             tags:
-              only: /.*/
+              ignore: /.*/
+  build_and_publish:
+    jobs:
       - publish:
           requires:
             - build
