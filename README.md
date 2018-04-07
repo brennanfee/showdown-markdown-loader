@@ -1,6 +1,6 @@
 # showdown-markdown-loader
 
-A WebPack loader for processing Mardown files with ShowdownJs.
+A WebPack loader for processing Markdown files with ShowdownJs.
 
 ## License
 
