@@ -37,8 +37,6 @@ workflows:
           filters:
             tags:
               ignore: /v[0-9]+(\.[0-9]+)*/
-            branches:
-              only: /.*/
   release:
     jobs:
       - publish:
@@ -47,4 +45,3 @@ workflows:
               only: /v[0-9]+(\.[0-9]+)*/
             branches:
               ignore: /.*/
-
