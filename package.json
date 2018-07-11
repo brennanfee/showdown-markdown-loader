@@ -21,11 +21,17 @@
     "showdownjs"
   ],
   "devDependencies": {
+    "eslint": "^5.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
     "highlight.js": "^9.12.0",
     "html-loader": "^0.5.5",
-    "jest": "^22.4.3",
-    "prettier": "^1.11.1",
-    "webpack": "^4.4.1"
+    "htmlhint": "^0.9.13",
+    "jest": "^22.4.4",
+    "prettier": "^1.13.7",
+    "stylelint": "^9.3.0",
+    "stylelint-config-standard": "^18.2.0",
+    "webpack": "^4.16.0"
   },
   "dependencies": {
     "loader-utils": "^1.1.0",
@@ -33,6 +39,27 @@
   },
   "license": "MIT",
   "repository": "brennanfee/showdown-markdown-loader",
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "plugin:prettier/recommended"
+    ]
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "trailingComma": "es5",
+    "proseWrap": "always",
+    "semi": false,
+    "singleQuote": true,
+    "requirePragma": false,
+    "insertPragma": false
+  },
   "scripts": {
     "test": "jest --coverage"
   }
