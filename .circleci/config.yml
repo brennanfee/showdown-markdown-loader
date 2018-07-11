@@ -9,15 +9,15 @@ jobs:
 
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies
+            - v8-dependencies-{{ checksum "package.json" }}
+            - v8-dependencies
 
       - run: npm install
 
       - save_cache:
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v8-dependencies-{{ checksum "package.json" }}
 
       - run: npm test
 
@@ -33,15 +33,21 @@ workflows:
   version: 2
   ci:
     jobs:
-      - build:
-          filters:
-            tags:
-              ignore: /v[0-9]+(\.[0-9]+)*/
+      - build
   release:
     jobs:
-      - publish:
+      - build:
           filters:
             tags:
               only: /v[0-9]+(\.[0-9]+)*/
             branches:
               ignore: /.*/
+      - publish:
+          requires:
+            - build
+          filters:
+            tags:
+              only: /v[0-9]+(\.[0-9]+)*/
+            branches:
+              ignore: /.*/
+
